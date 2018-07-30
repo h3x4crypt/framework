@@ -22,7 +22,7 @@ Route::get('/', [
 */
 Route::get('resetPassword/{token}', ['as' => 'resetPassword', function($token)
 {
-   return View::make('resetPassword')->with('token', $token); 
+   return View::make('resetPassword')->with('token', $token);
 }]);
 
 
@@ -173,7 +173,7 @@ Route::get('/status/{statusId}/like', [
 Route::get('/QRCode', [
 	    'uses' => '\App\Http\Controllers\QRCodeController@getQRCode',
 	    'as' => 'QRCode.index',
-    	
+
 ]);
 
 
@@ -185,7 +185,7 @@ Route::get('/QRCode', [
 Route::get('/en', [
 	    'uses' => '\App\Http\Controllers\EnController@getEn',
 	    'as' => 'en.index',
-    	
+
 ]);
 
 
@@ -193,7 +193,7 @@ Route::get('/en', [
 Route::get('/ar', [
 	    'uses' => '\App\Http\Controllers\ArController@getAr',
 	    'as' => 'ar.index',
-    	
+
 ]);
 
 
@@ -224,14 +224,8 @@ Route::post('/upload', [
 */
 
 
-Route::get('/eFinance', [
-	    'uses' => '\App\Http\Controllers\ViewsController@geteFinanceView',
-	    'as' => 'efinance.view',
-    	
+Route::get('/dashboard', [
+	    'uses' => '\App\Http\Controllers\DashboardController@getIndex',
+	    'as' => 'dashboard.index',
+    	'middleware' => ['auth'],
 ]);
-
-
-
-
-
-

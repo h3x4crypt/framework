@@ -1,6 +1,6 @@
 @extends('templates.default')
 
 @section('content')
-	<h3>eFinance</h3>
+	<h3>Dashboard </h3>
 
 @stop
