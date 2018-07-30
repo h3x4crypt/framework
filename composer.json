@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+"name": "h3/x4",
+"description": "CyperUW 0x01",
+"keywords": ["h3x4","0x01"],
     "license": "MIT",
     "type": "project",
     "require": {
